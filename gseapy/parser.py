@@ -76,7 +76,7 @@ def gsea_edb_parser(results_path):
     return res
 
 
-def gsea_gmt_parser(gmt, organism='Human', min_size = 3, max_size = 1000, gene_list=None):
+def gsea_gmt_parser(gmt, organism='Fish', min_size = 3, max_size = 1000, gene_list=None):
     """Parse gene_sets.gmt(gene set database) file or download from enrichr server.
 
     :param str gmt: the gene_sets.gmt file or an enrichr library name.
@@ -164,7 +164,7 @@ def gsea_gmt_parser(gmt, organism='Human', min_size = 3, max_size = 1000, gene_l
     else:
         return genesets_filter
 
-def get_library_name(organism='Human'):
+def get_library_name(organism='Fish'):
     """return enrichr active enrichr library name. 
     see also: https://maayanlab.cloud/modEnrichr/
 
